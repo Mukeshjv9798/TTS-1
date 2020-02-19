@@ -43,7 +43,7 @@
 
     // VALIDATION
     "run_eval": true,
-    "test_delay_epochs": 10,  //Until attention is aligned, testing only wastes computation time.
+    "test_delay_epochs": 0,  //Until attention is aligned, testing only wastes computation time.
     "test_sentences_file": null,  // set a file to load sentences to be used for testing. If it is null then we use default english sentences.
 
     // OPTIMIZER
@@ -90,7 +90,7 @@
     "max_seq_len": 150,     // DATASET-RELATED: maximum text length
 
     // PATHS
-    "output_path": "/data5/rw/pit/keep/",      // DATASET-RELATED: output path for all training outputs.
+    "output_path": "/content/drive/My Drive/",      // DATASET-RELATED: output path for all training outputs.
     // "output_path": "/media/erogol/data_ssd/Models/runs/",
  
     // PHONEMES
@@ -108,7 +108,7 @@
         [
             {
                 "name": "ljspeech",
-                "path": "/data5/ro/shared/data/keithito/LJSpeech-1.1/",
+                "path": "/content/LJSpeech-1.1/",
                 // "path": "/home/erogol/Data/LJSpeech-1.1",
                 "meta_file_train": "metadata_train.csv",
                 "meta_file_val": "metadata_val.csv"
@@ -116,4 +116,3 @@
         ]
 
 }
-
