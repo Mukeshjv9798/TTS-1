@@ -567,7 +567,7 @@ def main(args):  # pylint: disable=redefined-outer-name
         criterion = nn.L1Loss() if c.model in ["Tacotron", "TacotronGST"
                                                ] else nn.MSELoss()
     criterion_st = nn.BCEWithLogitsLoss(
-        pos_weight=torch.tensor(10)) if c.stopnet else None
+        pos_weight=torch.tensor(10,dtype=torch.float)) if c.stopnet else None
 
     if args.restore_path:
         checkpoint = torch.load(args.restore_path, map_location='cpu')
